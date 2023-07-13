@@ -37,7 +37,7 @@ while attempts > 1:
         print("You Win!\n")
         print("The word is:", word)
         break
-    new_guess = input("Guess a character:")
+    new_guess = input("Guess a character: ")
     guesses += new_guess
     if new_guess not in word:
         attempts -= 1
