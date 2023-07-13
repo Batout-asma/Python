@@ -1,10 +1,10 @@
 import random
 
-L1 = ['apple', 'mango', 'banana', 'strawberry']
-L2 = ['wolf', 'fox', 'deer', 'horse']
-L3 = ['swedan', 'france', 'china', 'england']
-L4 = ['alger', 'seoul', 'paris', 'moscow']
-L5 = ['swain', 'ashe', 'fizz', 'zyra']
+L1 = ['apple', 'mango', 'banana', 'strawberry','apricot','peach','pinapple','cherry','kiwi','avocados']
+L2 = ['wolf', 'fox', 'deer', 'horse','rabbit','turtle','fish','crocodile','cow','pigeon']
+L3 = ['sweden', 'france', 'china', 'england','belgium','chad','greece','irland','mexico','peru','turkey']
+L4 = ['algiers', 'seoul', 'paris', 'moscow','jakarta','rome','tokyo','berlin']
+L5 = ['swain', 'ashe', 'fizz', 'zyra','skarner','gragas','jarvan','karthus','corki','evelynn','elise','fiora','nasus','lux','nidalee','quinn','shaco']
 
 list_number = int(input(
     "Choose a list from below:\n\t1-Fruits\n\t2-Animals\n\t3-Countries\n\t4-Capitals\n\t5-LOL Champ\nList Number: "))
