@@ -1,6 +1,8 @@
 import random
-
-def play():
+user_cpt = 0
+ai_cpt = 0
+def play(user_cpt, ai_cpt):
+    print("\t1- Rock ✊\n\t2- Paper ✋\n\t3- Scissors ✌️")
     choice =int(input("Enter your choice: "))
     while choice < 1 or choice > 3:
         choice =int(input("Enter a valid choice: "))
@@ -30,18 +32,13 @@ def play():
         print("You Lose 💀\n")
     else:
         print("You Win 🎉\n")
-
+        cpt+=1
+    return user_cpt, ai_cpt
 
 print("\n - Winning rules are below: --\n|     ✊ VS ✋ => ✋ Win!     |\n|     ✌️  VS ✋ => ✌️  Win!     |\n|     ✊ VS ✌️  => ✊ Win!     |\n -----------------------------")
-print("\t1- Rock ✊\n\t2- Paper ✋\n\t3- Scissors ✌️")
-
-play()
-x = input("You wanna play again? (y/n): ")
-if x =='y':
-    while x == 'y':
-        play()
-        x = input("You wanna play again?(y/n): ")
-    else:
-        print("Cya Soon...")
-else:
-    print("Cya Soon...")
+while True:
+    user_cpt, ai_cpt= play(user_cpt,ai_cpt)
+    x = input("Do you want to play again? (y/n): ")
+    if x != 'y':
+        print("\nThe Final Score is:\n","🤖 ",ai_cpt,"  ",user_cpt," 🧑","\nCya Soon...\n")
+        break
