@@ -10,7 +10,7 @@ def play():
         user_choice = '✋'  
     elif choice == 3:
         user_choice = '✌️'
-    print("You played", user_choice)
+    print("You played:", user_choice)
 
     print("\nnow its 🤖 turn ...")
 
@@ -32,11 +32,11 @@ def play():
         print("You Win 🎉\n")
 
 
-print("\n-- Winning rules are below: --\n|     ✊ VS ✋ => ✋ Win!     |\n|     ✌️  VS ✋ => ✌️  Win!     |\n|     ✊ VS ✌️  => ✊ Win!     |\n -----------------------------")
+print("\n - Winning rules are below: --\n|     ✊ VS ✋ => ✋ Win!     |\n|     ✌️  VS ✋ => ✌️  Win!     |\n|     ✊ VS ✌️  => ✊ Win!     |\n -----------------------------")
 print("\t1- Rock ✊\n\t2- Paper ✋\n\t3- Scissors ✌️")
 
 play()
-x = input("You wanna play again?(y/n): ")
+x = input("You wanna play again? (y/n): ")
 if x =='y':
     while x == 'y':
         play()
