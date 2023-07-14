@@ -12,7 +12,7 @@ def play():
         user_choice = '✌️'
     print("You played", user_choice)
 
-    print("now its 🤖 turn ...")
+    print("\nnow its 🤖 turn ...")
 
     ai = random.randint(1, 3)
     if ai == 1:
@@ -21,15 +21,15 @@ def play():
         ai_choice = '✋'
     elif ai == 3:
         ai_choice = '✌️'
-    print("Ai played:", ai_choice)
+    print("Ai played:", ai_choice,"\n")
 
     print(user_choice, "VS", ai_choice)
     if ai == choice:
-        print("DRAW 🙂")
+        print("DRAW 🙂\n")
     elif ai == 1 and choice == 3 or ai == 3 and choice == 2 or ai == 2 and choice == 1:
-        print("You Lose 💀")
+        print("You Lose 💀\n")
     else:
-        print("You Win 🎉")
+        print("You Win 🎉\n")
 
 
 print("\n-- Winning rules are below: --\n|     ✊ VS ✋ => ✋ Win!     |\n|     ✌️  VS ✋ => ✌️  Win!     |\n|     ✊ VS ✌️  => ✊ Win!     |\n -----------------------------")
