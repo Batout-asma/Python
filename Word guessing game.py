@@ -24,7 +24,7 @@ elif list_number == 5:
 word = random.choice(words)
 print("Guess the characters")
 guesses = ''
-attempts = 10
+attempts = 5
 while attempts > 1:
     failed = 0
     for char in word:

@@ -30,9 +30,10 @@ def play(user_cpt, ai_cpt):
         print("DRAW 🙂\n")
     elif ai == 1 and choice == 3 or ai == 3 and choice == 2 or ai == 2 and choice == 1:
         print("You Lose 💀\n")
+        ai_cpt += 1
     else:
         print("You Win 🎉\n")
-        cpt+=1
+        user_cpt += 1
     return user_cpt, ai_cpt
 
 print("\n - Winning rules are below: --\n|     ✊ VS ✋ => ✋ Win!     |\n|     ✌️  VS ✋ => ✌️  Win!     |\n|     ✊ VS ✌️  => ✊ Win!     |\n -----------------------------")
